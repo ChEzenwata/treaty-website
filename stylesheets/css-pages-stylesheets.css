@@ -1,8 +1,10 @@
 body {
-  background-color: #fbfbfe;
+  font-family: Arial;
+  background-color: #f5f5dc;
   color: #17230b;
 }
 h1 {
+  color: darkgreen;
   text-align: center;
   font-size: 40px;
 }
