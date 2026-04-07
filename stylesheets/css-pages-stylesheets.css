@@ -1,7 +1,7 @@
 body {
-  font-family: Arial;
+  font-family: "Times New Roman", Times, serif;
   background-color: #f5e1c2;
-  color: #17230b;
+  color: #050703;
 }
 h1 {
   color: #a56f45;
@@ -9,5 +9,5 @@ h1 {
   font-size: 40px;
 }
 p {
-  font-size: 24px; 
+  font-size: 24px;
 }

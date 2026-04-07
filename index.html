@@ -2,7 +2,8 @@
   Course: Web Dev II
   Teacher: S. Hardman
   School: PTC
-  Date Last Modidfied: 10/3/2026-->
+  Date Last Modidfied: 24/3/2026
+-->
 <!doctype html>
 <html lang="en">
   <head>
@@ -21,11 +22,15 @@
         margin-right: 10px;
       }
       .video-banner {
-        position: relative; 
+        /* allows the items inside the banner to be positioned
+        relative to this section instead of the whole page. */
+        position: relative;
         /* video stretches across the page. */
         width: 100%;
         /* controls banner height. */
         height: 300px;
+        /* if the video is larger than the banner area, the extra
+        parts are cut off s they don't spill outside the banner. */
         overflow: hidden;
       }
       .video-banner video {
@@ -35,24 +40,15 @@
         /* video fills the banner without stretching. */
         object-fit: cover;
       }
-      .banner-text {
-        /* allows text to appear on op of the video. */
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 40px;
-      }
       p {
-        border: 1px solid black;
+        border: 1px solid #050703;
         border-radius: 5px;
         /* adds space between the text and border. */
         padding: 10px;
         margin-right: 20px;
       }
       img {
-        border: 1px solid black;
+        border: 1px solid #050703;
         /* rounds the corner. */
         border-radius: 30px;
         width: 300px;
@@ -63,32 +59,32 @@
         background-color: #d1a77b;
       }
       footer {
-    background-color: #2c2c2c;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    border-top: 4px solid #c49a3a;
-    font-size: 14px;
-}
-footer p {
-  border: none;
-}
-ul {
-  list-style-type: none; 
-  padding: 0;
-}
-li {
-  display: inline; 
-  margin-right: 15px;
-}
-a {
-  text-decoration: none; 
-}
-nav{
-  text-align: center;
-  background-color: #d1a77b;
-}
+        background-color: #2c2c2c;
+        color: whitesmoke;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        border-top: 4px solid #c49a3a;
+        font-size: 14px;
+      }
+      footer p {
+        border: none;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        display: inline;
+        margin-right: 15px;
+      }
+      a {
+        text-decoration: none;
+      }
+      nav {
+        text-align: center;
+        background-color: #d1a77b;
+      }
     </style>
   </head>
   <body>
@@ -97,81 +93,88 @@ nav{
         src="https://treaty1.ca/wp-content/uploads/2021/11/TREATY-ONE-DEV-CORP-LOGO-2019-2048x1703.png"
         alt="Treaty 1 logo"
         class="logo" />
-      <nav class="navbar">
+      <nav>
         <ul>
-          <li><a href="index.html"></a>Home</li>
-          <li><a href="promises.html"></a>Promises</li>
-          <li><a href="today.html"></a>Treaties Today</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="promises.html">Promises</a></li>
+          <li><a href="today.html">Treaties Today</a></li>
         </ul>
       </nav>
-      <section class="video-banner">
-        <!-- autoplay: video starts automatically. -->
-        <!-- muted: required for autoplay in most browsers. -->
-        <!-- loop: video repeats continuosly. -->
-        <video autoplay muted loop>
-          <source src="treaty-1-images/treaty 1.mp4" type="video/mp4" />
-        </video>
+      <section>
+        <div class="video-banner">
+          <!-- autoplay: video starts automatically. -->
+          <!-- muted: required for autoplay in most browsers. -->
+          <!-- loop: video repeats continuosly. -->
+          <video autoplay muted loop>
+            <source src="treaty-1-images/treaty 1.mp4" type="video/mp4" />
+          </video>
+        </div>
       </section>
       <h1>Welcome to Treaty 1 Territory</h1>
     </header>
-    <h2>Where was it negotiated?</h2>
-    <p>
-      It was negotiated at Lower Fort Garry aka Stone Fort<br />
-      located in present day Manitoba, Canada. The negotiations<br />
-      began on July 27th and concluded August 3rd in 1871.<br />
-      Apprximately 1000 Indigenous people including men, women and<br />
-      and children attended the negotiations, forming a large<br />
-      camp around the fort.
-    </p>
-    <img
-      src="https://www.canadashistory.ca/getmedia/9af442a1-a937-4636-b2d6-f2ca90047ce3/ExpTraColourfulNorthernFort.jpg.aspx?width=768&height=628&ext=.jpg"
-      width="100"
-      height="100"
-      alt="Stone Fort" />
-    <br />
-    <br />
-    <h2>Map of Treaty 1:</h2>
-    <img
-      src="https://e2vapt3x8ya.exactdn.com/wp-content/uploads/2020/10/1-2.png?strip=all&lossy=1&w=2560&ssl=1"
-      width="400"
-      height="400"
-      alt="treaty map" />
-    <h2>Why are treaties important?</h2>
-    <p>
-      Treaties are considered the
-      <span style="font-style: italic">"supreme Law of the Land"</span> and they
-      are <br />
-      important today because they are legally binding agreements that recognize
+    <main>
+      <h2>Where was it negotiated?</h2>
+      <p>
+        It was negotiated at Lower Fort Garry aka Stone Fort<br />
+        located in present day Manitoba, Canada. The negotiations<br />
+        began on July 27th and concluded August 3rd in 1871.<br />
+        Apprximately 1000 Indigenous people including men, women and<br />
+        and children attended the negotiations, forming a large<br />
+        camp around the fort.
+      </p>
+      <img
+        src="https://www.canadashistory.ca/getmedia/9af442a1-a937-4636-b2d6-f2ca90047ce3/ExpTraColourfulNorthernFort.jpg.aspx?width=768&height=628&ext=.jpg"
+        width="100"
+        height="100"
+        alt="Stone Fort" />
       <br />
-      independence, protect rights and guide governance between Nations and
-      Indigenous <br />
-      peoples. For Indigenous Nations, treaties affirm their in-born
-      sovereignty, allowing <br />
-      them to govern their lands, manage resources and maintain nation-to-nation
       <br />
-      relationships with the federal government.
-    </p>
-    <img
-      src="https://media.nativeamericanstoday.com/2025/07/tribal-treaties-explained.webp"
-      width="400"
-      height="400"
-      alt="treaty shaking hands" />
+      <h2>Map of Treaty 1:</h2>
+      <img
+        src="https://e2vapt3x8ya.exactdn.com/wp-content/uploads/2020/10/1-2.png?strip=all&lossy=1&w=2560&ssl=1"
+        width="400"
+        height="400"
+        alt="treaty map" />
+      <h2>Why are treaties important?</h2>
+      <p>
+        Treaties are considered the
+        <span style="font-style: italic">"supreme Law of the Land"</span> and
+        they are <br />
+        important today because they are legally binding agreements that
+        recognize
+        <br />
+        independence, protect rights and guide governance between Nations and
+        Indigenous <br />
+        peoples. For Indigenous Nations, treaties affirm their in-born
+        sovereignty, allowing <br />
+        them to govern their lands, manage resources and maintain
+        nation-to-nation
+        <br />
+        relationships with the federal government.
+      </p>
+      <img
+        src="https://media.nativeamericanstoday.com/2025/07/tribal-treaties-explained.webp"
+        width="400"
+        height="400"
+        alt="treaty shaking hands" />
+    </main>
+
+    <footer>
+      <p><strong>Treaty 1 Territory Acknowledgement:</strong></p>
+      <p>
+        We acknowledge that we are on Treaty 1 Territory, the traditional <br />
+        lands of the Anishinaabe, Cree, Oji-Cree, Dakota and Dene Peoples <br />
+        and the homeland of the Metis Nation.
+      </p>
+
+      <p>
+        This website was made for educational purposes to share <br />
+        information about Treaty 1 and it's history.
+      </p>
+
+      <p>
+        &#169; 2026 / Created by Amanda Ezenwata / Grade 9 Web Design Project
+      </p>
+    </footer>
   </body>
-  <footer>
-    <p><strong>Treaty 1 Territory Acknowledgement:</strong></p>
-    <p>
-    We acknowledge that we are on Treaty 1 Territory, the traditional <br/>
-    lands of the Anishinaabe, Cree, Oji-Cree, Dakota and Dene Peoples <br/>
-    and the homeland of the Metis Nation.
-    </p>
-
-    <p>
-      This website was made for educational purposes to share <br>
-      information about Treaty 1 and it's history.
-    </p>
-
-    <p>
-      &#169; 2026 / Created by Amanda / Grade 9 Web Design Project
-    </p>
-  </footer>
 </html>
