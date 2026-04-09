@@ -1,4 +1,12 @@
+html {
+  font-size: 62.5%;
+}
+/* the asterix will apply the line height style to all elements on the page. */
+* {
+  line-height: 140%;
+}
 body {
+  font-size: 1.8rem;
   font-family: "Times New Roman", Times, serif;
   background-color: #f5e1c2;
   color: #050703;
@@ -6,8 +14,25 @@ body {
 h1 {
   color: #a56f45;
   text-align: center;
-  font-size: 40px;
+  font-size: 3.2rem;
+}
+h2 {
+  text-align: center;
+  background-color: #d1a77b;
 }
 p {
   font-size: 24px;
+  border: 1px solid #050703;
+  border-radius: 5px;
+  /* adds space between the text and border. */
+  padding: 10px;
+  margin-right: 20px;
+}
+nav {
+  text-align: center;
+  background-color: #d1a77b;
+}
+a {
+  text-decoration: none;
+  color: #2c2c2c;
 }
