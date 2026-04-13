@@ -56,3 +56,15 @@ li {
   display: inline;
   margin-right: 15px;
 }
+img {
+  border: 1px solid #050703;
+  /* rounds the corner. */
+  border-radius: 30px;
+  width: 300px;
+  height: auto;
+}
+/* 
+  My color family for my website is neutral and this helpful for teachers
+  because it creates a calm and respectful tone, it improves readability
+  for students and it keeps the focus on the content.
+*/
