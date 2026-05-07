@@ -27,6 +27,7 @@ p {
   /* adds space between the text and border. */
   padding: 10px;
   margin-right: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 nav {
   text-align: center;
@@ -63,6 +64,20 @@ img {
   width: 300px;
   height: auto;
 }
+nav ul li:hover {
+  transform: translateY(-20px) scale(1.1);
+  transition: transform 0.3s ease;
+}
+nav a:hover {
+  background-color: #f5e1c2;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+p :hover {
+  transform: translateY(-20px) scale(1.1);
+  transition: transform 0.3s ease;
+}
+
 /* 
   My color family for my website is neutral and this helpful for teachers
   because it creates a calm and respectful tone, it improves readability
