@@ -1,37 +1,47 @@
-html {
-  font-size: 62.5%;
-}
 /* the asterix will apply the line height style to all elements on the page. */
 * {
   line-height: 140%;
 }
+html {
+  font-size: 62.5%;
+}
 body {
   font-size: 1.8rem;
   font-family: "Times New Roman", Times, serif;
-  background-color: #f5e1c2;
-  color: #050703;
+  background-color: #fbefef;
+  color: #121212;
 }
 h1 {
-  color: #a56f45;
+  color: #9b0101;
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 4.8rem;
 }
 h2 {
   text-align: center;
-  background-color: #d1a77b;
+  font-size: 3.2rem;
+  clear: both;
 }
 p {
-  font-size: 24px;
-  border: 1px solid #050703;
+  display: inline-block;
+  font-size: 2.4rem;
+  border: 1px solid #121212;
+  background-color: #ededed;
   border-radius: 5px;
   /* adds space between the text and border. */
-  padding: 10px;
-  margin-right: 20px;
+  padding: 20px;
+  margin: 2rem;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 65%;
 }
 nav {
   text-align: center;
   background-color: #d1a77b;
+}
+nav a {
+  display: inline-block;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
 }
 a {
   text-decoration: none;
@@ -45,6 +55,7 @@ footer {
   margin-top: 40px;
   border-top: 4px solid #c49a3a;
   font-size: 14px;
+  clear: both;
 }
 footer p {
   border: none;
@@ -64,22 +75,32 @@ img {
   width: 300px;
   height: auto;
 }
-nav ul li:hover {
-  transform: translateY(-20px) scale(1.1);
-  transition: transform 0.3s ease;
-}
-nav a:hover {
-  background-color: #f5e1c2;
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-p :hover {
-  transform: translateY(-20px) scale(1.1);
+nav ul li {
   transition: transform 0.3s ease;
 }
 
+nav ul li:hover {
+  transform: translateY(-10px);
+  background-color: #f5e1c2;
+}
+p {
+  transition: transform 0.3s ease;
+}
+p:hover {
+  transform: translateY(-5px);
+}
 /* 
   My color family for my website is neutral and this helpful for teachers
   because it creates a calm and respectful tone, it improves readability
   for students and it keeps the focus on the content.
 */
+
+.floated-left {
+  float: left;
+}
+
+.center-image {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
